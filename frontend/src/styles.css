@@ -1,0 +1,164 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: #f4f6f8;
+  color: #1f2937;
+  font-family: Arial, sans-serif;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+button {
+  border: 0;
+  border-radius: 5px;
+  padding: 9px 14px;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.app {
+  width: min(720px, calc(100% - 32px));
+  margin: 40px auto;
+}
+
+h1 {
+  margin-bottom: 4px;
+}
+
+.subtitle {
+  margin-top: 0;
+  color: #6b7280;
+}
+
+.task-form,
+.edit-form {
+  display: grid;
+  gap: 8px;
+}
+
+.task-form {
+  margin: 24px 0;
+  padding: 20px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background: white;
+}
+
+input,
+textarea {
+  width: 100%;
+  border: 1px solid #cbd5e1;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.filters,
+.task-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.filters {
+  margin: 18px 0;
+}
+
+.filters button,
+.secondary {
+  background: #64748b;
+}
+
+.filters button.active {
+  background: #2563eb;
+}
+
+.task-list {
+  display: grid;
+  gap: 12px;
+  padding: 0;
+  list-style: none;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 16px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background: white;
+}
+
+.task-heading {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.task-heading input {
+  width: auto;
+  margin-top: 5px;
+}
+
+.task-item h2,
+.task-item p {
+  margin: 0 0 6px;
+}
+
+.task-item h2 {
+  font-size: 18px;
+}
+
+.task-item.completed h2,
+.task-item.completed .task-heading p {
+  color: #6b7280;
+  text-decoration: line-through;
+}
+
+.danger {
+  background: #dc2626;
+}
+
+.error-message,
+.form-error {
+  color: #b91c1c;
+}
+
+.error-message {
+  padding: 12px;
+  border: 1px solid #fecaca;
+  border-radius: 5px;
+  background: #fef2f2;
+}
+
+.form-error {
+  margin: 2px 0;
+}
+
+.empty-message {
+  color: #6b7280;
+}
+
+@media (max-width: 560px) {
+  .task-item {
+    align-items: stretch;
+    flex-direction: column;
+  }
+}
