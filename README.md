@@ -355,14 +355,4 @@ returns `404 Not Found`.
 
 See `DEBUGGING.md` for a systematic guide.
 
-## What you learned
 
-- How React state and forms drive a small CRUD interface.
-- How to call an HTTP API with `fetch` and handle failures.
-- How NestJS modules, controllers, services, DTOs, pipes, and CORS fit together.
-- How to keep route handling thin and database logic in a service.
-- How Prisma models become migrations and type-safe CRUD queries.
-- How PostgreSQL stores the data behind Prisma.
-- How to follow one request across every layer using browser and server tools.
-- How HTTP status codes distinguish success, validation, missing data, and
-  server failures.
